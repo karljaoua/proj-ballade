@@ -5,13 +5,10 @@
 
 CREATE DATABASE IF NOT EXISTS Promenades;
 USE Promenades; 
-CREATE USER 'adminBalades'@'%' IDENTIFIED BY 'BAladesbalades'; 
+CREATE USER 'adminBalades'@'%' IDENTIFIED BY 'BAladesbalades';
 
 GRANT ALL PRIVILEGES ON Promenades TO 'adminBalades';
 
-
-CREATE DATABASE IF NOT EXISTS Promenades; 
-USE Promenades;
 
 CREATE TABLE Balade ( 
     Id int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
