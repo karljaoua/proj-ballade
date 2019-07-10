@@ -9,7 +9,6 @@ CREATE USER 'adminBalades'@'%' IDENTIFIED BY 'BAladesbalades';
 
 GRANT ALL PRIVILEGES ON Promenades TO 'adminBalades';
 
-
 CREATE TABLE Balade ( 
     Id int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
     Titre varchar(250), 
