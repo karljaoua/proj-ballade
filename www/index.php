@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     
     </head>
     <body>
@@ -20,7 +21,7 @@
                             <img class="d-block w-100" src="images/potoSlide1.jpg" alt="First slide">
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
-                                <p class="textCarousel">venez partager vos experience</p>
+                                <h5 class="textCarousel">"venez partager vos experience"</h5>
                                 <button type="button" class="btn btn-outline-light">Creer une balade</button>
                             </div>
                         </div>
@@ -28,19 +29,11 @@
                             <img class="d-block w-100" src="images/potoSlide2.jpg" alt="Second slide">
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
-                                <p class="textCarousel">venez partager vos experience</p>
+                                <h5 class="textCarousel">"venez partager vos experience"</h5>
                                 <button type="button" class="btn btn-outline-light">Creer une balade</button>
                             </div>
                         </div>   
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>      
+                    </div>    
                 </div>
             </div>
         </div>
