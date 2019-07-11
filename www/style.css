@@ -2,6 +2,16 @@ p{
     font-family: inherit;
     color: inherit;
 }
+.p1{
+    margin-bottom: 30px;
+    size: cover;
+}
+.carousel-inner{
+    height: 150px;
+}
+.carousel-caption{
+    padding-bottom: 80px;
+}
 .titrePrincipal {
     color: white;
     font-weight: bolder;
@@ -14,4 +24,24 @@ p{
     font-size: 20px;
     margin-bottom: 20px;
     font-style: oblique;
+}
+.nb{
+    font-family: 'Bree Serif', serif;
+    color: black;
+    text-decoration: none;
+}
+.fondB{
+    background-image: url(images/pp2.jpg);
+    background-size: cover;
+}.cl1{
+    background-size: cover; 
+    padding: 20px;
+    padding-left: 50px;
+}
+.l1{
+    list-style: none;
+    font-family: 'Bree Serif', serif;
+    font-size: 12px;
+    font-weight: bolder;color: black;
+
 }

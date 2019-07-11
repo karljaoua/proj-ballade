@@ -12,8 +12,18 @@
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     
     </head>
-    <body>
-        <div class="container">
+    <body class="fondB">
+        <div>
+            <ul class="nav justify-content-center nb">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Créer une balade</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container p1">
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -32,10 +42,48 @@
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
                                 <button type="button" class="btn btn-outline-light">Creer une balade</button>
                             </div>
-                        </div>   
+                        </div> 
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/potoSlide3.jpg" alt="Second slide">
+                            <div class="carousel-caption d-block">
+                                <h3 class="titrePrincipal">Nos petites balades</h3>
+                                <h5 class="textCarousel">"venez partager vos experience"</h5>
+                                <button type="button" class="btn btn-outline-light">Creer une balade</button>
+                            </div>
+                        </div>     
                     </div>    
                 </div>
             </div>
+        </div>
+            <div class="container cl1">
+                <div class="row">
+                    <ul class="l1">
+                        <li>balade 1</li>
+                        <p>lieux: xxxxx temps:hhh creer part:pseudo</p>
+                        <li>balade 2</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 3</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 4</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 1</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 2</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 3</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 4</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 1</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 2</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 3</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                        <li>balade 4</li>
+                        <p>lieux: xxxxx temps:hhh crer part:pseudo</p>
+                    </ul>
+                </div>
         </div>
       
 
