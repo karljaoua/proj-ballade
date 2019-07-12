@@ -34,14 +34,40 @@ p{
     background-image: url(images/pp2.jpg);
     background-size: cover;
 }.cl1{
-    background-size: cover; 
-    padding: 20px;
-    padding-left: 50px;
+    background-size: right; 
+  
+  
 }
 .l1{
     list-style: none;
     font-family: 'Bree Serif', serif;
     font-size: 12px;
     font-weight: bolder;color: black;
+    text-align: center;
 
 }
+.black{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.white{
+    background-color: rgba(255, 255, 255, 1);
+    border: solid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.img-thumbnail{
+    border: solid;
+    margin-right: 5%;
+    height:80px;
+}
+
+.image{
+    height:520px;
+}
+
+.column-right{
+    height:520px;
+    overflow-y: scroll;
+}
+
