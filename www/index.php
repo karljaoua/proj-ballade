@@ -69,10 +69,10 @@
                 
                 <div class="row">
 
-                     <div class="col-sm-none col-lg-6">
+                   <!--  <div class="col-sm-none col-lg-6">
                                 <img class="image" src="/home/cf/proj-ballade-master/proj-ballade/www/images/randonnée.jpg" alt="Thumbnail image">
                     </div>
-
+                    -->
                         <div class="col-sm-12 col-lg-6 black"> 
                             <div class="d-flex flex-column">
                                 
@@ -112,7 +112,17 @@
                 </div>
             
         </div>
-    
+        <div class="container">
+            <div class="row">
+<footer class="page-footer font-small dark col-8 offset-3">
+<div class="footer-copyright py-2">© 2019 Copyright Realise
+</div>
+<div class= "col-12 offset-2">
+<a  class="lienFooter" href="https://www.realise.ch/fr"> realise.ch/fr </a>
+</div>
+</footer>
+</div>
+</div>
       
 
 
