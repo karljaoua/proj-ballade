@@ -6,11 +6,21 @@ p{
     margin-bottom: 30px;
     size: cover;
 }
+.navb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+a{
+    color: white;
+}
 .carousel-inner{
-    height: 150px;
+    height: auto;
 }
 .carousel-caption{
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 .titrePrincipal {
     color: white;
@@ -27,8 +37,8 @@ p{
 }
 .nb{
     font-family: 'Bree Serif', serif;
-    color: black;
     text-decoration: none;
+    font-size: 20px;
 }
 .fondB{
     background-image: url(images/pp2.jpg);
@@ -45,6 +55,10 @@ p{
     font-weight: bolder;color: black;
     text-align: center;
 
+}
+.btn{
+    padding: o; 
+    margin-bottom: 15px;
 }
 .black{
     background-color: rgba(0, 0, 0, 0.75);

@@ -1,4 +1,4 @@
-<?php
+
 
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
     
     </head>
     <body class="fondB">
-        <div>
+    <div class="navb">
             <ul class="nav justify-content-center nb">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
@@ -25,17 +25,18 @@
                     <a class="nav-link" href="#">Ajouter une randonnée</a>
                 </li>
             </ul>
-        </div>
+    </div>
         <div class="container p1">
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
+                        
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="images/potoSlide1.jpg" alt="First slide">
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
-                                <button type="button" class="btn btn-outline-light">Ajouter une randonnée</button>
+                                
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -43,7 +44,6 @@
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
-                                <button type="button" class="btn btn-outline-light">Ajouter une randonnée</button>
                             </div>
                         </div> 
                         <div class="carousel-item">
@@ -51,15 +51,18 @@
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
-                                <button type="button" class="btn btn-outline-light">Ajouter une randonnée</button>
                             </div>
                         </div>     
                     </div>    
                 </div>
             </div>
         </div>
-        
-         //---------------Xavier liste des randonnées------------------//     
+        <div class="container">
+            <div class="row">
+                <button type="button" class="btn col-6 offset-3 btn-outline-dark btn-sm text-center">Ajouter une randonnée</button>
+            </div>
+        </div>
+<!--Xavier liste des randonnées-->
 
               
         <div class="container-fluid">
@@ -122,4 +125,3 @@
 </html>
 
 
-?>
