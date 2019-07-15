@@ -4,7 +4,7 @@ p{
 }
 .p1{
     margin-bottom: 30px;
-    size: cover;
+    max-width: 100%;
 }
 .navb{
     position: absolute;
@@ -61,7 +61,8 @@ a{
     margin-bottom: 15px;
 }
 .black{
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: lightgray ;
+    padding: 15px;
 }
 .white{
     background-color: rgba(255, 255, 255, 1);
@@ -401,4 +402,52 @@ form{
     color: black;
     text-align: center;
 }
+@media (max-width: 992px) {
+    .photo{
+        display: none;
+    }
+    
+}
+@media (min-width: 992px){
+    .carousel-inner{
+        height: 600px;
+    }
+    .carousel-caption{
+        padding-bottom: 200px;
+    }
+    .titrePrincipal {
+        color: white;
+        font-weight: bolder;
+        font-family: 'Bree Serif', serif;
+        font-size: 60px;
+    }
+    .textCarousel{
+        font-family: 'Bree Serif', serif;
+        color: white;
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-style: oblique;
+    }
+}
+@media (min-width: 1200px){
+    .carousel-inner{
+        height: 600px;
+    }
+    .carousel-caption{
+        padding-bottom: 600px;
+    }
+    .titrePrincipal {
+        color: white;
+        font-weight: bolder;
+        font-family: 'Bree Serif', serif;
+        font-size: 60px;
+    }
+    .textCarousel{
+        font-family: 'Bree Serif', serif;
+        color: white;
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-style: oblique;
+    }
 
+}

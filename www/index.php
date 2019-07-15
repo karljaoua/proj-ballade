@@ -30,13 +30,11 @@
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="images/potoSlide1.jpg" alt="First slide">
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
-                                
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -65,59 +63,68 @@
 <!--Xavier liste des randonnées-->
 
               
-        <div class="container-fluid">
-                
-                <div class="row">
 
                    <!--  <div class="col-sm-none col-lg-6">
                                 <img class="image" src="/home/cf/proj-ballade-master/proj-ballade/www/images/randonnée.jpg" alt="Thumbnail image">
                     </div>
                     -->
-                        <div class="col-sm-12 col-lg-6 black"> 
-                            <div class="d-flex flex-column">
-                                
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 1</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx /temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>
-                                        
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/minature_2.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 2</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>
-
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_3.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 3</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>
-
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_4.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 4</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>    
-                            </div>
-                        </div>
+<div class="container-fluid black"> 
+    <div class=" row">
+        <div class="col-lg-6 d-flex flex-column">
+            <div>
+                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image">
+                <div>
+                    <h3>Randonnée 1</h3>
+                    <p>pays: xxxxx / ville: xxxxx /temps: hhh / crée par: pseudo</p>
                 </div>
-            
+            </div>
+            <div>
+                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/minature_2.jpg" alt="Thumbnail image">
+                <div>
+                    <h3>Randonnée 2</h3>
+                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
+                </div>
+            </div>
+            <div>
+                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_3.jpg" alt="Thumbnail image">
+                <div>
+                    <h3>Randonnée 3</h3>
+                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
+                </div>
+            </div>
+            <div>
+                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_4.jpg" alt="Thumbnail image">
+                <div>
+                    <h3>Randonnée 4</h3>
+                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
+                </div>
+            </div>
         </div>
+            
+        <div class="col-6 photo">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                        <div class="carousel-item">
+                        <img src="images/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
         <div class="container">
             <div class="row">
-<footer class="page-footer font-small dark col-8 offset-3">
-<div class="footer-copyright py-2">© 2019 Copyright Realise
-</div>
-<div class= "col-12 offset-2">
+<footer class="page-footer font-small dark col-12 offset-3 offset-md-5">
+<div class="footer-copyright py-2">© 2019 Copyright 
 <a  class="lienFooter" href="https://www.realise.ch/fr"> realise.ch/fr </a>
 </div>
 </footer>
