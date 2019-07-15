@@ -59,7 +59,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <button type="button" class="btn col-6 offset-3 btn-outline-dark btn-sm text-center">Ajouter une randonnée</button>
+                <button type="button" class="btn col-8 offset-2 btn-outline-dark btn-sm text-center">Ajouter une randonnée</button>
             </div>
         </div>
 <!--Xavier liste des randonnées-->
