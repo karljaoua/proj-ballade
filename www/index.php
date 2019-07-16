@@ -74,7 +74,7 @@
             <div>
                 <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image">
                 <div>
-                    <h3>Randonnée 1</h3>
+                    <h3><?php echo  ?> </h3>
                     <p>pays: xxxxx / ville: xxxxx /temps: hhh / crée par: pseudo</p>
                 </div>
             </div>

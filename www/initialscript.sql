@@ -1,1 +1,0 @@
-    INSERT INTO Balade (Titre, Pseudo, Codepostal, Ville, Pays, Lieudepart, Lieuarrivee, Description) VALUES ('la balade de jeane', 'Mike99', '1290', 'Versoix', 'suisse', 'pont-ceard', 'gentot', ' petite balade sympa au bord du lac')

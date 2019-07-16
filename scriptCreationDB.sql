@@ -5,7 +5,7 @@ CREATE DATABASE IF NOT EXISTS Promenades;
 USE Promenades; 
 CREATE USER 'adminBalades'@'%' IDENTIFIED BY 'BAladesbalades'; 
 
-GRANT ALL PRIVILEGES ON Promenades TO 'adminBalades';
+GRANT ALL PRIVILEGES ON Promenades.* TO 'adminBalades';
 
 
 CREATE TABLE Balade ( 
