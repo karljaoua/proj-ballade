@@ -35,6 +35,18 @@ a{
     margin-bottom: 30px;
     font-style: oblique;
 }
+.tbalade{
+    color: black;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+}
+.textbalade{
+    color: black;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+    font-size: 12px;
+}
 .nb{
     font-family: 'Bree Serif', serif;
     text-decoration: none;

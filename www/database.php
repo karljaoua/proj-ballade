@@ -15,7 +15,7 @@ class Database{
 
         try{
             // Le code qu'on essaye de faire
-            $this->connexion = new PDO('mysql:dbname='.$PARAM_nom_bd.';host='.$PARAM_hote,
+            $this->connexion = new PDO('mysql:dbname='.$PARAM_nom_bd.';host='.$PARAM_hote.';charset=UTF8',
                                 $PARAM_utilisateur,
                                 $PARAM_mot_passe);
         }catch(Exception $monException){

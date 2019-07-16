@@ -7,12 +7,12 @@
 require_once("database.php");
 require_once("balade.php");
 $database = new Database();
-$balades = $database->getAllBalade ();
+$balades = $database->getAllBalade ();  
 ?>
 <html>
     <head>
 
-        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Nos petites balades</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -77,11 +77,11 @@ $balades = $database->getAllBalade ();
     <div class=" row">
         <div class="col-lg-6 d-flex flex-column">
             <div>
-                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image">
+                <!--<img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image"> -->
                 <div>
                 <?php foreach($balades as $balade){ ?>
-        <h3>Titre : <?php echo $balade->getTitre(); ?></h3>
-            <p> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
+        <h3 class="tbalade">Titre : <?php echo $balade->getTitre(); ?></h3>
+            <p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
         <?php } ?>
                 </div>
             </div>
