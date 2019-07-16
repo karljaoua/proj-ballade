@@ -1,5 +1,7 @@
 <?php
 require_once("database.php");
+require_once("balade.php");
+
 
 /////
 
@@ -19,7 +21,17 @@ if($database->getConnexion() == null){
 $balades = $database->getAllBalade ();
     
 var_dump($balades);
-
-
-
 ?>
+<html>
+    <header>
+        <link rel="stylesheet" href="style.css"> 
+    </header>
+    <body>
+    <?php foreach($balades as $balade){ ?>
+        <h3>Titre : <?php echo $balade->getTitre(); ?></h3>
+            <p> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
+        <?php } ?>
+        <a href="process-delete.php?id=<?php echo $chien->getId(); ?>">Delete</a>
+        <a href="updateChien.php?id=<?php echo $chien->getId(); ?>">Update</a>
+    </body>
+</html>

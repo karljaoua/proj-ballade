@@ -3,7 +3,12 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-
+<?php
+require_once("database.php");
+require_once("balade.php");
+$database = new Database();
+$balades = $database->getAllBalade ();
+?>
 <html>
     <head>
 
@@ -74,29 +79,10 @@
             <div>
                 <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image">
                 <div>
-                    <h3>icjwoosamkcma</h3>
-                    <p>pays: xxxxx / ville: xxxxx /temps: hhh / crée par: pseudo</p>
-                </div>
-            </div>
-            <div>
-                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/minature_2.jpg" alt="Thumbnail image">
-                <div>
-                    <h3>Randonnée 2</h3>
-                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                </div>
-            </div>
-            <div>
-                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_3.jpg" alt="Thumbnail image">
-                <div>
-                    <h3>Randonnée 3</h3>
-                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                </div>
-            </div>
-            <div>
-                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_4.jpg" alt="Thumbnail image">
-                <div>
-                    <h3>Randonnée 4</h3>
-                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
+                <?php foreach($balades as $balade){ ?>
+        <h3>Titre : <?php echo $balade->getTitre(); ?></h3>
+            <p> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
+        <?php } ?>
                 </div>
             </div>
         </div>
