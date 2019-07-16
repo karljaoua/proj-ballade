@@ -1,5 +1,4 @@
 <?php
-
 require_once("balade.php");
 
 class Database{
@@ -31,5 +30,15 @@ class Database{
     public function getConnexion(){
         return $this->connexion;
     }  
+    public function getAllBalade(){
+        $pdo = $this->connexion->prepare(
+            "SELECT * FROM Balade"
+        );
+        $pdo->execute();
+         
+        $balades = $pdo->fetchAll(PDO::FETCH_CLASS, "Balade");
+        return $balades;
+    }
+
 }
 ?>  

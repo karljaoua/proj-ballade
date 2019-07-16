@@ -16,5 +16,10 @@ if($database->getConnexion() == null){
 }else{
     echo "<p>Connexion réussie</p>";
 }
+$balades = $database->getAllBalade ();
+    
+var_dump($balades);
+
+
 
 ?>
