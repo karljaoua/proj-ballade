@@ -24,9 +24,9 @@
         public function getPseudo()   {return $this->pseudo; }
         
         public function getType()     {return $this->type; }  //Un seul caractère F (famille) ou S (sport)
-        public function getCodepostal()  {return $this->codepostal; }
-        public function getVille()    {return $this->ville; }
-        public function getPays()     {return $this->pays; }
+        public function getCodepostal()  {return trim($this->codepostal); }
+        public function getVille()    {return trim($this->ville); }
+        public function getPays()     {return trim($this->pays); }
         public function getLieuDep()  {return $this->lieudepart; }
         public function getLieuArr()  {return $this->lieuarrivee; }
         public function getDescrip()  {return $this->description; }

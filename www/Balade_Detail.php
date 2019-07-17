@@ -1,4 +1,31 @@
+<?php
+    require_once 'database.php';  //Import de la classe database.php
+    require_once 'balade.php';
 
+        
+    $nombd='Promenades';
+    $user ='adminBalades';
+    $pwd  ='BAladesbalades';
+
+
+    $myconnection = New Database($nombd, $user, $pwd);
+
+    if($myconnection->getConnexion() == NULL) {
+        echo "La connection à la Database " .$nombd ." n'a pas pu se Faire";
+        var_dump($myconnection);
+    }
+    else {
+        echo "La connection à la Database " .$nombd ." a Réussi";
+        
+    }
+
+    $number = 3;
+
+    $labalade = $myconnection->listUnebalade($number);
+
+    //var_dump($labalade);
+    echo $labalade->getTitre(); echo "<br/>";echo "<br/>";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,12 +77,13 @@
 
                     
                 <div class="mx-auto text-center title-categ-balades mb-5">
-                    Vers la Gruyère par les flancs du Gibloux
+                    <?php echo $labalade->getTitre(); ?>
+                    <!-- Vers la Gruyère par les flancs du Gibloux -->
                 </div>
 
 
                 <div class="mb-5 divi-pseudo">
-                    <span class="pseudo">Proposé par Jeremy</span>                     
+                    <span class="pseudo">Proposé par <?php echo $labalade->getPseudo(); ?></span>                     
                 </div>
 
                 <div class="row">
@@ -64,30 +92,27 @@
                         <div class="col-lg-6 col-xs-12">
         
                             <div class="typebalade">                        
-                                <label class="radio-inline"><input type="radio" name="opt" id="opt-0" value = "F" checked>Famille </label>                            
-                                <label class="radio-inline"><input type="radio" name="opt" id="opt-1" value = "S">Sportif</label>                   
+                                <label class="radio-inline"><input type="radio" name="opt" value = "F" <?php if($labalade->getType()=="F"){ echo "checked";}?>>Famille</label>                            
+                                <label class="radio-inline"><input type="radio" name="opt" value = "S" <?php if($labalade->getType()=="S"){ echo "checked";}?>>Sportif</label>                   
                             </div>
     
                             <div class="vertic-space" >
-                                <span class="cplieu">CH-1780 Fribourg Ville</span>
-                                </br>
-                                <span class="cplieu">Suisse</span>                        
+                                <span class="cplieu"><?php echo $labalade->getCodepostal() ." " .$labalade->getVille() ; ?></span>
+                                <br/>
+                                <span class="cplieu"><?php echo $labalade->getPays(); ?></span>                        
                             </div>
     
                             <div class="dep-arr vertic-space">
-                                <span class="deparr vertic-space"><strong>Départ:</strong> Romont-sur-Oron</span> 
+                                <span class="deparr vertic-space"><strong>Départ: </strong><?php echo $labalade->getLieuDep(); ?></span> 
                                 <br/>
-                                <span class="deparr vertic-space""><strong>Arrivée:</strong> Bulle les Saillens</span>
+                                <span class="deparr vertic-space""><strong>Arrivée: </strong><?php echo $labalade->getLieuArr(); ?></span>
                                 
                             </div>
                             <br/>
                             <div class="balade-descrip-block">
                                     <span class="titleDescrip">Description<br/></span>
                                     
-                                    <span class="balade-descrip">Une longue randonnée reliant le chef-lieu du Canton de Fribourg 
-                                    au chef-lieu de la Gruyère. On retiendra, parmi les innombrables merveilles 
-                                    de cette randonnée, le lac de la Gruyère, véritable joyau, avec ses contours variés 
-                                    aux multiples anses</span>
+                                    <span class="balade-descrip"><?php echo $labalade->getDescrip(); ?></span>
                             </div>
                             
                             <br/>
@@ -95,9 +120,7 @@
                             <div class="balade-descrip-block">
                                     <span class="titleDescrip">Itinéraire<br/></span>
                                 
-                                    <span class="balade-descrip">Fribourg - Ste-Apolline - Froideville (FR) - Ecuvillens - Posat - Farvagny-le-Grand - 
-                                    Vuisternens-en-Ogoz - Crête du Gibloux - Gibloux - Malessert - Petit Prary - La Grosse Moille - Neyruz - 
-                                    Pont sur la Sionge - Bulle</span>
+                                    <span class="balade-descrip"><?php echo $labalade->getEtapes(); ?></span>
                             </div>
     
                             <br/>
@@ -115,17 +138,13 @@
         
             
                         <div class="col-12 mb-4 text-center ">
-                                
-                                    
+      
                                         <button type="button" class="btn-success btn-block list-return">Retour à la Liste</button>
-                    
-                                        
+ 
                         </div>
         
-                                    <!-- <img src="/home/cf/proj_balades/www/images/Legibloux.jpg" alt="Nature"> -->
-        
-               
-
+                        <!-- <img src="/home/cf/proj_balades/www/images/Legibloux.jpg" alt="Nature"> -->
+  
                 
             </div> <!--  le div du Row Principal -->
         </div>

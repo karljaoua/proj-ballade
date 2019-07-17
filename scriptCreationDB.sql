@@ -5,22 +5,22 @@ CREATE DATABASE IF NOT EXISTS Promenades;
 USE Promenades; 
 CREATE USER 'adminBalades'@'%' IDENTIFIED BY 'BAladesbalades'; 
 
-GRANT ALL PRIVILEGES ON Promenades TO 'adminBalades';
+GRANT ALL PRIVILEGES ON Promenades.* TO 'adminBalades';
 
 
 CREATE TABLE Balade ( 
-    Id int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
-    Titre varchar(250), 
-    Pseudo varchar(60),
-    Type varchar(1), 
-    Codepostal varchar(12), 
-    Ville varchar(80), 
-    Pays varchar(150),
-    Lieudepart varchar (255), 
-    Lieuarrivee varchar (255), 
-    Description text, 
-    Etapes text, 
-    Photo varchar (255)
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    titre varchar(250), 
+    pseudo varchar(60),
+    type varchar(1), 
+    codepostal varchar(12), 
+    ville varchar(80), 
+    pays varchar(150),
+    lieudepart varchar (255), 
+    lieuarrivee varchar (255), 
+    description text, 
+    etapes text, 
+    photo varchar (255)
 );
 
 

@@ -1,4 +1,4 @@
-INSERT INTO Balade (Titre, Type, Pseudo, Codepostal, Ville, Pays, Lieudepart, Lieuarrivee, Description, Etapes) VALUES (
+INSERT INTO Balade (titre, type, pseudo, codepostal, ville, pays, lieudepart, lieuarrivee, description, etapes) VALUES (
     
   'Vers la Gruyère par les flancs du Gibloux', 'F', "Jeremy", 'CH-1705', 'Fribourg', 'Suisse', 'Fribourg-Centre', 'Gibloux',
    
@@ -7,7 +7,7 @@ INSERT INTO Balade (Titre, Type, Pseudo, Codepostal, Ville, Pays, Lieudepart, Li
     'Fribourg - Ste-Apolline - Froideville (FR) - Ecuvillens - Posat - Farvagny-le-Grand - Vuisternens-en-Ogoz - Crête du Gibloux - Gibloux - Malessert - Petit Prary - La Grosse Moille - Neyruz - Pont sur la Sionge - Bulle'
 );
 
-INSERT INTO Balade (Titre, Type, Pseudo, Codepostal, Ville, Pays, Lieudepart, Lieuarrivee, Description, Etapes) VALUES (
+INSERT INTO Balade (titre, type, pseudo, codepostal, ville, pays, lieudepart, lieuarrivee, description, etapes) VALUES (
 
 'Du district de la Glâne au district de la Veveyse', 'F', 'Marco', 'CH-1745', 'Romont', 'Suisse', 'Romont', 'Chatel-St-Denis',
 
@@ -15,7 +15,7 @@ INSERT INTO Balade (Titre, Type, Pseudo, Codepostal, Ville, Pays, Lieudepart, Li
 
 'Romont - Villaraboud - Pra Mottes - Lieffrens - Les Mettraux - Le Crêt - Grattavache - Progens - Châtel-St-Denis' );
 
-INSERT INTO Balade (Titre, Type, Pseudo, Codepostal, Ville, Pays, Lieudepart, Lieuarrivee, Description, Etapes) VALUES (
+INSERT INTO Balade (titre, type, pseudo, codepostal, ville, pays, lieudepart, lieuarrivee, description, etapes) VALUES (
 
 'Des ruines médiévales, un lac et une chapelle','S', 'Thierry', 'CH-1803', 'La Roche Gare', 'Suisse',
 'La Roche', 'Le Stald ',
