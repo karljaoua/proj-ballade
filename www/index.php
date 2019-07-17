@@ -78,7 +78,7 @@ $balades = $database->getAllBalade ();
         <div class="col-lg-6 d-flex flex-column">
             <div>
                 <!--<img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image"> -->
-                <div>
+                <div class="lindex">
                 <?php foreach($balades as $balade){ ?>
         <h3 class="tbalade">Titre : <?php echo $balade->getTitre(); ?></h3>
             <p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
@@ -109,8 +109,8 @@ $balades = $database->getAllBalade ();
 </div>
         <div class="container">
             <div class="row">
-<footer class="page-footer font-small dark col-12 offset-3 offset-md-5">
-<div class="footer-copyright py-2">© 2019 Copyright 
+<footer class="page-footer font-small dark col-12 offset-2 offset-md-5">
+<div class="footer-copyright py-2">© 2019 Copyright : 
 <a  class="lienFooter" href="https://www.realise.ch/fr"> realise.ch/fr </a>
 </div>
 </footer>
