@@ -1,22 +1,17 @@
-<?php
-// Import du fichier database
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <?php
 require_once("database.php");
-// Instanciation de la class Databse
-$database = new database();
-//Récupérer l'id depuis l'url
-$id = $_GET["id"];
-var_dump($id);
-// Récupération de la liste de balades
-$dog = $database->getDogById($id);
-
-
 ?>
-<html>
+
     <header>
         <link rel="stylesheet" href="style.css"> 
     </header>
     <body>
         <h1>Modification d'une randonnée.</h1>
+
 
         <form action="processUpdate.php" method="post">
             <input type="hidden" name="id" value="<?php echo $id->getId(); ?>">

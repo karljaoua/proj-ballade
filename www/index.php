@@ -88,7 +88,7 @@ $balades = $database->getAllBalade ();
                 </div>
             </div>
         </div>
-            
+            <!---Carousel---->
         <div class="col-6 photo">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">

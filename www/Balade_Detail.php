@@ -1,3 +1,7 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
 <?php
     require_once 'database.php';  //Import de la classe database.php
     require_once 'balade.php';
@@ -27,9 +31,6 @@
     echo $labalade->getTitre(); echo "<br/>";echo "<br/>";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <title>Bootstrap 4 Example</title>
     <meta charset="utf-8">
@@ -50,9 +51,6 @@
         <div class="container-fluid">
 
             <div class="col-lg-12 categ-balades">
-
-
-
                 <nav class="navbar navbar-expand-md">
                     <a class="navbar-brand" href="#">Logo</a>
                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
