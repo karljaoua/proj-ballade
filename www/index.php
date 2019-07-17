@@ -1,13 +1,18 @@
-<?php
+
 
 
 <!DOCTYPE html>
 <html lang="fr">
-
+<?php
+require_once("database.php");
+require_once("balade.php");
+$database = new Database();
+$balades = $database->getAllBalade ();  
+?>
 <html>
     <head>
 
-        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Nos petites balades</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,7 +21,7 @@
     
     </head>
     <body class="fondB">
-        <div>
+    <div class="navb">
             <ul class="nav justify-content-center nb">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
@@ -25,7 +30,7 @@
                     <a class="nav-link" href="#">Ajouter une randonnée</a>
                 </li>
             </ul>
-        </div>
+    </div>
         <div class="container p1">
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -35,7 +40,6 @@
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
-                                <button type="button" class="btn btn-outline-light">Ajouter une randonnée</button>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -43,7 +47,6 @@
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
-                                <button type="button" class="btn btn-outline-light">Ajouter une randonnée</button>
                             </div>
                         </div> 
                         <div class="carousel-item">
@@ -51,65 +54,68 @@
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>
-                                <button type="button" class="btn btn-outline-light">Ajouter une randonnée</button>
                             </div>
                         </div>     
                     </div>    
                 </div>
             </div>
         </div>
-        
-         //---------------Xavier liste des randonnées------------------//     
+        <div class="container">
+            <div class="row">
+                <button type="button" class="btn col-8 offset-2 btn-outline-dark btn-sm text-center">Ajouter une randonnée</button>
+            </div>
+        </div>
+<!--Xavier liste des randonnées-->
 
               
-        <div class="container-fluid">
-                
-                <div class="row">
 
-                     <div class="col-sm-none col-lg-6">
+                   <!--  <div class="col-sm-none col-lg-6">
                                 <img class="image" src="/home/cf/proj-ballade-master/proj-ballade/www/images/randonnée.jpg" alt="Thumbnail image">
                     </div>
-
-                        <div class="col-sm-12 col-lg-6 black"> 
-                            <div class="d-flex flex-column">
-                                
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 1</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx /temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>
-                                        
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/minature_2.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 2</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>
-
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_3.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 3</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>
-
-                                        <div class="d-flex justify-content-start white">
-                                                <img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_4.jpg" alt="Thumbnail image">
-                                                <div>
-                                                    <h3>Randonnée 4</h3>
-                                                    <p>pays: xxxxx / ville: xxxxx / temps: hhh / crée par: pseudo</p>
-                                                </div>
-                                        </div>    
-                            </div>
-                        </div>
+                    -->
+<div class="container-fluid black"> 
+    <div class=" row">
+        <div class="col-lg-6 d-flex flex-column">
+            <div>
+                <!--<img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image"> -->
+                <div>
+                <?php foreach($balades as $balade){ ?>
+        <h3 class="tbalade">Titre : <?php echo $balade->getTitre(); ?></h3>
+            <p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
+        <?php } ?>
                 </div>
-            
+            </div>
         </div>
-    
+            
+        <div class="col-6 photo">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                        <div class="carousel-item">
+                        <img src="images/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+        <div class="container">
+            <div class="row">
+<footer class="page-footer font-small dark col-12 offset-3 offset-md-5">
+<div class="footer-copyright py-2">© 2019 Copyright 
+<a  class="lienFooter" href="https://www.realise.ch/fr"> realise.ch/fr </a>
+</div>
+</footer>
+</div>
+</div>
       
 
 
@@ -122,4 +128,3 @@
 </html>
 
 
-?>

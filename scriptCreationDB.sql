@@ -12,13 +12,13 @@ CREATE TABLE Balade (
     id int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
     titre varchar(250), 
     pseudo varchar(60),
-    type varchar(1), 
+    Type varchar(1), 
     codepostal varchar(12), 
     ville varchar(80), 
     pays varchar(150),
     lieudepart varchar (255), 
     lieuarrivee varchar (255), 
-    description text, 
+    Description text, 
     etapes text, 
     photo varchar (255)
 );
