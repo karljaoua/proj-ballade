@@ -27,7 +27,7 @@ $balades = $database->getAllBalade ();
                     <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ajouter une randonnée</a>
+                    <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
                 </li>
             </ul>
     </div>
@@ -62,7 +62,8 @@ $balades = $database->getAllBalade ();
         </div>
         <div class="container">
             <div class="row">
-              <a class="col-8 offset-2 text-center btn-sm btn  btn-outline-dark" href="Balade_Ajouter.php"> Ajouter une randonnée</a> 
+              <a class="col-8 offset-2 text-center btn-sm btn  btn-outline-dark" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
+
             </div>
         </div>
 <!--Xavier liste des randonnées-->
