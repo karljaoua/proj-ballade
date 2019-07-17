@@ -39,51 +39,52 @@ class Database{
         $balades = $pdo->fetchAll(PDO::FETCH_CLASS, "Balade");
         return $balades;
     }
+    public function listUnebalade($unebalade) {
+
+
+        //Ici il est super important que les nom des Colonnes de la requête soient exactement les mêmes que les attributs
+        //de la classe Chiens
+
+        $listrequest  = "SELECT B.id, B.titre,B.pseudo, B.type, B.codepostal, B.ville, B.pays, B.lieudepart, B.lieuarrivee, ";
+        $listrequest .= "B.description, B.etapes, B.photo FROM Balade B  WHERE B.id = :numbalade ";
+        
+       
+
+        $pdostatement = $this->connexion->prepare($listrequest);
+
+        
+        $pdostatement->execute(['numbalade'=>$unebalade]); // ou execute([':numbalade'=>$unebalade]);
+
+                               
+        $result = $pdostatement->fetchObject('balade');   
+        
+        return $result;
+    }
+    public function insertBalade($titre, $pseudo, $type, $cp, $ville, $country, 
+                                 $begin, $arrival, $descrip, $etap, $foto)
+           
+    {
+        $insertrequest  = "INSERT INTO Balade (titre, pseudo, type, codepostal, ";
+        $insertrequest .= "ville, pays, lieudepart, lieuarrivee, description, etapes, photo) ";
+        $insertrequest .= "VALUES (:titre, :pseudo, :type, :codepostal, :ville, :pays, ";
+        $insertrequest .= ":lieudepart, :lieuarrivee, :description, :etapes, :photo )";
+                  
+        
+        $pdostatement = $this->connexion->prepare($insertrequest);
+        $pdostatement->execute(array( ":titre" => $titre, ":pseudo" => $pseudo, 
+                    ":type" => $type, ":codepostal" => $cp, ":ville" => $ville,
+                    ":description" => $descrip, ":etapes" => $etap, ":photo" => $foto,
+                    ":pays" => $country, ":lieudepart" => $begin, ":lieuarrivee" => $arrival ));
+
+        //var_dump($pdostatement->errorInfo());
+        //Récupérer l'ID créé lors de l'ajout de l'enregistrement dans Balade
+
+        
+        $id = $this->connexion->lastInsertId();
+        return $id;           
+
+    }
 
 }
 ?>  
-        public function listUnebalade($unebalade) {
-
-
-            //Ici il est super important que les nom des Colonnes de la requête soient exactement les mêmes que les attributs
-            //de la classe Chiens
-
-            $listrequest  = "SELECT B.id, B.titre,B.pseudo, B.type, B.codepostal, B.ville, B.pays, B.lieudepart, B.lieuarrivee, ";
-            $listrequest .= "B.description, B.etapes, B.photo FROM Balade B  WHERE B.id = :numbalade ";
-            
-           
-
-            $pdostatement = $this->connexion->prepare($listrequest);
-
-            
-            $pdostatement->execute(['numbalade'=>$unebalade]); // ou execute([':numbalade'=>$unebalade]);
-
-                                   
-            $result = $pdostatement->fetchObject('balade');   
-            
-            return $result;
-        }
-        public function insertBalade($titre, $pseudo, $type, $cp, $ville, $country, 
-                                     $begin, $arrival, $descrip, $etap, $foto)
-               
-        {
-            $insertrequest  = "INSERT INTO Balade (titre, pseudo, type, codepostal, ";
-            $insertrequest .= "ville, pays, lieudepart, lieuarrivee, description, etapes, photo) ";
-            $insertrequest .= "VALUES (:titre, :pseudo, :type, :codepostal, :ville, :pays, ";
-            $insertrequest .= ":lieudepart, :lieuarrivee, :description, :etapes, :photo )";
-                      
-            
-            $pdostatement = $this->connexion->prepare($insertrequest);
-            $pdostatement->execute(array( ":titre" => $titre, ":pseudo" => $pseudo, 
-                        ":type" => $type, ":codepostal" => $cp, ":ville" => $ville,
-                        ":description" => $descrip, ":etapes" => $etap, ":photo" => $foto ));
-                        ":pays" => $country, ":lieudepart" => $begin, ":lieuarrivee" => $arrival,
-
-            //var_dump($pdostatement->errorInfo());
-            //Récupérer l'ID créé lors de l'ajout de l'enregistrement dans Balade
-    
-            
-            $id = $this->connexion->lastInsertId();
-            return $id;           
-    
-        }
+        
