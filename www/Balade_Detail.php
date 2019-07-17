@@ -59,10 +59,10 @@
                     <div class="collapse navbar-collapse" id="main-navigation">
                         <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ajouter</a>
+                            <a class="nav-link" href="Balade_Ajouter.php">Ajouter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Modifier</a>
+                            <a class="nav-link" href="balade_Modifier.php">Modifier</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Liste des Balades</a>
@@ -103,7 +103,7 @@
                             <div class="dep-arr vertic-space">
                                 <span class="deparr vertic-space"><strong>Départ: </strong><?php echo $labalade->getLieuDep(); ?></span> 
                                 <br/>
-                                <span class="deparr vertic-space""><strong>Arrivée: </strong><?php echo $labalade->getLieuArr(); ?></span>
+                                <span class="deparr vertic-space"><strong>Arrivée: </strong><?php echo $labalade->getLieuArr(); ?></span>
                                 
                             </div>
                             <br/>

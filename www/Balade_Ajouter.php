@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Bootstrap 4 Example</title>
+    <title>Balade_Ajouter.php</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
