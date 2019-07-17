@@ -6,15 +6,10 @@
     require_once 'database.php';  //Import de la classe database.php
     require_once 'balade.php';
 
-        
-    $nombd='Promenades';
-    $user ='adminBalades';
-    $pwd  ='BAladesbalades';
 
+    $myconnection = New Database();
 
-    $myconnection = New Database($nombd, $user, $pwd);
-
-    if($myconnection->getConnexion() == NULL) {
+  /*  if($myconnection->getConnexion() == NULL) {
         echo "La connection à la Database " .$nombd ." n'a pas pu se Faire";
         var_dump($myconnection);
     }
@@ -22,13 +17,14 @@
         echo "La connection à la Database " .$nombd ." a Réussi";
         
     }
+*/
 
     $number = 3;
 
     $labalade = $myconnection->listUnebalade($number);
 
     //var_dump($labalade);
-    echo $labalade->getTitre(); echo "<br/>";echo "<br/>";
+  /*  echo $labalade->getTitre(); echo "<br/>";echo "<br/>";*/
 ?>
 
 <head>
@@ -44,7 +40,7 @@
     
 </head>
 
-<body>
+<body class="fondB">
 
     <!------Section 6  Page du Right Food-->
     <section>
