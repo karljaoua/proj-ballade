@@ -14,18 +14,27 @@
     
 </head>
 
-<body>
+<body class="fondB">
 
     <!------Section 6  Page du Right Food-->
     <section> <!-- hhh -->
-	
+        <div class="navb2">
+                <ul class="nav justify-content-center nb">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
+                    </li>
+                </ul>
+        </div>
         <div class="container-fluid">
 
             <div class="row">
 					
                 <div class="col-lg-12 categ-balades">
   
-                    <div class="mx-auto text-center title-action-balades mb-5">Ajouter une nouvelle balade</div>
+                    <h1 class="titrePrincipalA">Ajouter une nouvelle balade</h1>
 
                 </div> <!-- class="col-lg-12 -->
             </div>      <!-- Fin du 1er Row englobant Menu + Titre +Auteur -->  
@@ -35,7 +44,7 @@
             <div class="row">
 
                
-                <div class="col-lg-6 col-xs-12">
+                <div class="col-lg-7 col-xs-12">
 
                                             
 
@@ -111,14 +120,14 @@
 
                     <div class="btn-group-horizontal d-flex justify-content-around thebtn" role="group" aria-label="Basic example">
                
-                            <button type="button" class="btn-lg btn-danger   modifier_btn ">Abandonner l'Ajout</button>
-                            <button type="button" class="btn-lg btn-success  modifier_btn">Confirmer  l'Ajout</button>
+                            <button type="button" class="btn btn-outline-danger modifier_btn x1">Abandonner l'Ajout</button>
+                            <button type="button" class="btn btn-outline-success modifier_btn x1">Confirmer  l'Ajout</button>
                     </div>
                         
 
                 </div>
 
-                <div class="col-lg-6 col-xs-12 mb-5 d-block"> 
+                <div class="col-lg-5 col-xs-12 mb-5 d-block"> 
                     <!-- <div class="img-fluid float-right col-md-6 image_balade_box"> -->
                          
                     <div class="encadrage-image-balade">
