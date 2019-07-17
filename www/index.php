@@ -81,10 +81,10 @@ $balades = $database->getAllBalade ();
             <div>
                 <!--<img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image"> -->
                 <div class="lindex">
-             <a href="<?php foreach($balades as $balade){ ?>
-        <h3 class="tbalade">Titre : <?php echo $balade->getTitre(); ?></h3>
-            <p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
-        <?php } ?></a>
+             <?php foreach($balades as $balade){ ?>
+                <a href="Balade_Detail.php"><h3 class='tbalade'> Titre : "<?php echo $balade->getTitre(); ?></h3></a>    
+                <a href="Balade_Detail.php"><p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p></a>
+            <?php } ?>
                 </div>
             </div>
         </div>
