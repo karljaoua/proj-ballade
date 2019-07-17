@@ -73,14 +73,14 @@ a{
     margin-bottom: 15px;
 }
 .black{
-    background-color: lightgray ;
     padding: 15px;
     height: 530px;
+    background-color: rgba(143, 188, 143, 0.5);
 }
 .lindex{
     height: 500px;
     overflow: auto;
-    scrollbar-color: black;
+    scrollbar-color:black;
 }
 .white{
     background-color: rgba(255, 255, 255, 1);

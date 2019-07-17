@@ -62,7 +62,7 @@ $balades = $database->getAllBalade ();
         </div>
         <div class="container">
             <div class="row">
-                <button type="button" class="btn col-8 offset-2 btn-outline-dark btn-sm text-center">Ajouter une randonnée</button>
+              <a class="col-8 offset-2 text-center btn-sm btn  btn-outline-dark" href="Balade_Ajouter.php"> Ajouter une randonnée</a> 
             </div>
         </div>
 <!--Xavier liste des randonnées-->
@@ -89,7 +89,7 @@ $balades = $database->getAllBalade ();
             
         <div class="col-6 photo">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inhttps://tenor.com/view/bien-dormi-good-morning-just-woke-up-what-just-happened-morning-face-gif-12471401ner">
                     <div class="carousel-item active">
                         <img src="images/img1.jpg" class="d-block w-100" alt="...">
                     </div>
