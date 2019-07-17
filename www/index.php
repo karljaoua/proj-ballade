@@ -74,16 +74,17 @@ $balades = $database->getAllBalade ();
                                 <img class="image" src="/home/cf/proj-ballade-master/proj-ballade/www/images/randonnée.jpg" alt="Thumbnail image">
                     </div>
                     -->
+
 <div class="container-fluid black"> 
     <div class=" row">
         <div class="col-lg-6 d-flex flex-column">
             <div>
                 <!--<img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image"> -->
                 <div class="lindex">
-                <?php foreach($balades as $balade){ ?>
+               <a href=" <?php foreach($balades as $balade){ ?>
         <h3 class="tbalade">Titre : <?php echo $balade->getTitre(); ?></h3>
             <p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
-        <?php } ?>
+        <?php } ?></a>
                 </div>
             </div>
         </div>
