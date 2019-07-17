@@ -80,17 +80,17 @@ $balades = $database->getAllBalade ();
             <div>
                 <!--<img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image"> -->
                 <div class="lindex">
-                <?php foreach($balades as $balade){ ?>
+             <a href="<?php foreach($balades as $balade){ ?>
         <h3 class="tbalade">Titre : <?php echo $balade->getTitre(); ?></h3>
             <p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
-        <?php } ?>
+        <?php } ?>"></a>   
                 </div>
             </div>
         </div>
             
         <div class="col-6 photo">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inhttps://tenor.com/view/bien-dormi-good-morning-just-woke-up-what-just-happened-morning-face-gif-12471401ner">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/img1.jpg" class="d-block w-100" alt="...">
                     </div>
@@ -109,8 +109,8 @@ $balades = $database->getAllBalade ();
     </div>
 </div>
         <div class="container">
-            <div class="row">
-<footer class="page-footer font-small dark col-12 offset-2 offset-md-5">
+            <div class="row  justify-content-center">
+<footer class="page-footer font-small dark">
 <div class="footer-copyright py-2">© 2019 Copyright : 
 <a  class="lienFooter" href="https://www.realise.ch/fr"> realise.ch/fr </a>
 </div>
