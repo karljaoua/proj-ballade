@@ -25,7 +25,7 @@
 					
                 <div class="col-lg-12 categ-balades">
   
-                    <div class="mx-auto text-center title-action-balades mb-5">Ajouter une Nouvelle Balade</div>
+                    <div class="mx-auto text-center title-action-balades mb-5">Ajouter une nouvelle balade</div>
 
                 </div> <!-- class="col-lg-12 -->
             </div>      <!-- Fin du 1er Row englobant Menu + Titre +Auteur -->  
