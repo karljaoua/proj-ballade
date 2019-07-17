@@ -22,7 +22,7 @@ require_once("database.php");
 $database = new database();
 
 // Appeler la fonction insertDog en lui passant les infos du formulaire
-// Récupérer le nouvel id du chien créé
+// Récupérer le nouvel id de la balade crée.
 // insertDog($nom, $age, $race, $idMaitre)
 $nouvelId = $database->balade_Modifier($id, $titre, $pseudo, $type, $codepostal, $ville, 
 $pays, $lieudepart, $lieuarrivee ,$description, $etapes ,$photo);

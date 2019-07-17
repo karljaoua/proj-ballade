@@ -1,68 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
-    <?php
-require_once("database.php");
-?>
-
-    <header>
-        <link rel="stylesheet" href="style.css"> 
-    </header>
-    <body>
-        <h1>Modification d'une randonnée.</h1>
-
-
-        <form action="processUpdate.php" method="post">
-            <input type="hidden" name="id" value="<?php echo $id->getId(); ?>">
-            <label for="id">Id</label>
-            <input type="text" id="titre" name="titre" value="<?php echo $titre->getNom(); ?>" required>
-            <label for="Titre">Titre</label>
-
-            <input type="text" id="pseudo" name="pseudo" value="<?php echo $pseudo->getNom(); ?>" required>
-            <label for="pseudo">Pseudo</label>
-
-            <input type="text" id="type" name="type" value="<?php echo $type->getNom(); ?>" required>
-            <label for="type">Type</label>
-
-            <input type="number" id="codepostal" name="codepostal" value="<?php echo $codepostal->getAge(); ?>" required>
-            <label for="codepostal">Code postal</label>
-
-            <input type="text" id="ville" name="ville" value="<?php echo $ville->getNom(); ?>" required>
-            <label for="ville">Ville</label>
-
-            <input type="text" id="pays" name="pays" value="<?php echo $pays->getNom(); ?>" required>
-            <label for="pays">Pays</label>
-
-            <input type="text" id="lieudepart" name="lieudepart" value="<?php echo $lieudepart->getNom(); ?>" required>
-            <label for="lieudepart">Lieudepart</label>
-
-            <input type="text" id="lieuarrivee" name="lieuarrivee" value="<?php echo $lieuarrivee->getNom(); ?>" required>
-            <label for="lieuarrivee">lieuarrivee</label>
-
-            <input type="text" id="lieuarrivee" name="lieuarrivee" value="<?php echo $lieuarrivee->getNom(); ?>" required>
-            <label for="lieuarrivee">Lieuarrivee</label>
-
-            <input type="text" id="description" name="description" value="<?php echo $description->getNom(); ?>" required>
-            <label for="description">Description</label>
-
-            <input type="text" id="etapes" name="etapes" value="<?php echo $etapes->getNom(); ?>" required>
-            <label for="etapes">Etapes</label>
-
-            <input type="image" id="photo" name="photo" value="<?php echo $photo->getNom(); ?>" required>
-            <label for="photo">Photo</label>
-
-<input type="text" id="raceChien" name="race" value="<?php echo $dog->getRace(); ?>" required>           
-
-<input type="submit" value = "Mettre à jour">
-
-        </form>
-
-        <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <title>Bootstrap 4 Example</title>
+    <title>balade_Modifier.php</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -213,10 +153,5 @@ require_once("database.php");
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
-
-</html>
-
-    </body>
-
 
 </html>
