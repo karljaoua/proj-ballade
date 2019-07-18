@@ -67,7 +67,7 @@
                             <a class="nav-link" href="balade_Modifier.php">Modifier</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Liste des Balades</a>
+                            <a class="nav-link" href="index.php">Liste des Balades</a>
                         </li>
                         </ul>
                     </div>
