@@ -126,17 +126,11 @@ a{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
 .img-thumbnail{
     border: solid;
     margin-right: 5%;
     height:80px;
 }
-
-.image{
-    height:520px;
-}
-
 .column-right{
     height:520px;
     overflow-y: scroll;

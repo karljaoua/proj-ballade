@@ -21,16 +21,16 @@ $balades = $database->getAllBalade ();
     
     </head>
     <body class="fondB">
-    <div class="navb">
-            <ul class="nav justify-content-center nb">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
-                </li>
-            </ul>
-    </div>
+        <div class="navb">
+                <ul class="nav justify-content-center nb">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
+                    </li>
+                </ul>
+        </div>
         <div class="container p1">
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
