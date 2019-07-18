@@ -92,7 +92,7 @@
                         <div class="col-lg-6 col-xs-12">
         
                             <div class="typebalade">                        
-                                <label class="radio-inline"><input type="radio" name="opt" value = "F" <?php if($labalade->getType()=="F"){ echo "checked";}?>>Famille</label>                            
+                                <label class="radio-inline"><input type="radio" name="opt" value = "F" <?php if($labalade->getType()=="F"){ echo "checked";}?>>Famille &nbsp &nbsp &nbsp</label>                            
                                 <label class="radio-inline"><input type="radio" name="opt" value = "S" <?php if($labalade->getType()=="S"){ echo "checked";}?>>Sportif</label>                   
                             </div>
     
