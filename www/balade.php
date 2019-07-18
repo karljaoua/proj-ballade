@@ -47,6 +47,13 @@
             return $ph;
         }
        
+        public function getUrlPhoto($path) {
+
+            $ph = trim($path) ."/" .trim($this->photo) ;
+          
+            print_r($ph);
+            return $ph;
+        }
 
 
         

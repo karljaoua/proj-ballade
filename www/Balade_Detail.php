@@ -18,10 +18,16 @@
         
     }
 */
+    if (isset($_GET['id']))
+    
+    {
+        // echo $_GET['id'];
+    
 
-    $number = 3;
+        $number = intval($_GET['id']);;
 
-    $labalade = $myconnection->listUnebalade($number);
+        $labalade = $myconnection->listUnebalade($number);
+    }
 
     //var_dump($labalade);
   /*  echo $labalade->getTitre(); echo "<br/>";echo "<br/>";*/
@@ -124,7 +130,7 @@
                         <div class="col-lg-6 col-xs-12 mb-5 categ-balades image_balade d-block">
                             <!-- <div class="img-fluid float-right col-md-6 image_balade_box"> -->
                                  
-                            <div class="image_balade">
+                            <div class="image_balade" style= "background-image: url('images/<?php echo $labalade->getPhoto(); ?>');" >
                                 <br/>  
                             </div>
                             

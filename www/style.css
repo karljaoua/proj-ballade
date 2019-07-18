@@ -5,6 +5,7 @@ p{
 .p1{
     margin-bottom: 30px;
     max-width: 100%;
+    justify-content: center;
 }
 .navb {
     position: absolute;
@@ -32,7 +33,7 @@ p{
     color: black;
 }
 .navb2 a:hover {
-    color: white;
+    color: white;   
 }
 a{
     text-decoration: none;
@@ -91,7 +92,7 @@ a{
     font-size: 20px;
 }
 .fondB{
-    background-image: url(images/pp2.jpg);
+    background-image: url(images/imageFond5.jpg);
     background-size: cover;
 }.cl1{
     background-size: right; 
@@ -165,7 +166,7 @@ a{
     margin-bottom: 1.75em;
 
 }
-.cplieu{
+.cplieu {
     font-size : 1.35em;
     font-family: "Arial";
 
@@ -238,6 +239,39 @@ h1{
     color: black;
     text-align: center;
 }
+
+.title-categ-balades{
+    color: blue;
+    font-family: "Arial";
+    font-size: 2.25em;
+    font-weight: bold;
+    
+    text-align: center;
+    margin:5%;
+
+}
+
+.divi-pseudo{
+    margin-left: 70%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.dep-arr{
+    marge-top : 5%;
+    font-size : 1.35em;
+}
+
+.typebalade{
+    font-size : 1.35em;
+    
+}
+
+input[type="radio"]{
+    margin-right: 40px;
+  }
+
 @media (max-width: 992px) {
     .photo{
         display: none;
@@ -286,4 +320,27 @@ h1{
         font-style: oblique;
     }
 
+}
+
+@media (max-width: 480px){
+
+    .thebtn{
+            display: flex;
+            flex-direction: column;
+ 
+    }
+}
+
+.thebtn{
+    margin-bottom:5%;
+
+}
+
+.image_balade{
+
+    min-height:37em;    
+	/* background-image: url('file:///k:/proj_balades/www/images/Legibloux.jpg'); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
 }
