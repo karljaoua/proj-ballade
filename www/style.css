@@ -5,6 +5,7 @@ p{
 .p1{
     margin-bottom: 30px;
     max-width: 100%;
+    justify-content: center;
 }
 .navb {
     position: absolute;
@@ -32,7 +33,7 @@ p{
     color: black;
 }
 .navb2 a:hover {
-    color: white;
+    color: white;   
 }
 a{
     text-decoration: none;
@@ -91,7 +92,7 @@ a{
     font-size: 20px;
 }
 .fondB{
-    background-image: url(images/pp2.jpg);
+    background-image: url(images/imageFond5.jpg);
     background-size: cover;
 }.cl1{
     background-size: right; 
