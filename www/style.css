@@ -269,7 +269,7 @@ h1{
 }
 
 input[type="radio"]{
-    margin-right: 40px;
+    margin-right: 20px;
   }
 
 @media (max-width: 992px) {
