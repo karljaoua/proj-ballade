@@ -67,7 +67,7 @@
                             <a class="nav-link" href="balade_Modifier.php">Modifier</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Liste des Balades</a>
+                            <a class="nav-link" href="index.php">Liste des Balades</a>
                         </li>
                         </ul>
                     </div>
@@ -139,7 +139,7 @@
             
                         <div class="col-12 mb-4 text-center ">
       
-                                        <button type="button" class="btn-success btn-block list-return">Retour à la Liste</button>
+                                    <a href="index.php" button type="button" class="btn-success btn-block list-return">Retour à la Liste</button></a>
  
                         </div>
         
