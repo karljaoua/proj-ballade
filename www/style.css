@@ -6,15 +6,45 @@ p{
     margin-bottom: 30px;
     max-width: 100%;
 }
-.navb{
+.navb {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
+    color: white;
+}
+.navb a {
+    color: white;
+}
+.navb a:hover {
+    color: black;
+}
+.navb2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    z-index: 2;
+}
+.navb2 a {
+    color: black;
+}
+.navb2 a:hover {
+    color: white;
 }
 a{
-    color: white;
+    text-decoration: none;
+}
+
+.navb2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    z-index: 2;
 }
 .carousel-inner{
     height: auto;
@@ -27,6 +57,14 @@ a{
     font-weight: bolder;
     font-family: 'Bree Serif', serif;
     font-size: 30px;
+}
+.titrePrincipalA{
+    color: black;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 45px;
 }
 .textCarousel{
     font-family: 'Bree Serif', serif;
@@ -72,15 +110,18 @@ a{
     padding: o; 
     margin-bottom: 15px;
 }
+.x1{
+    
+}
 .black{
-    background-color: lightgray ;
     padding: 15px;
     height: 530px;
+    background-color: rgba(143, 188, 143, 0.5);
 }
 .lindex{
     height: 500px;
     overflow: auto;
-    scrollbar-color: black;
+    scrollbar-color:black;
 }
 .white{
     background-color: rgba(255, 255, 255, 1);
@@ -154,9 +195,14 @@ a{
 }
 
 .lbl-balade{
+    font-family: 'Bree Serif', serif;
     font-weight: bold;
-    color: maroon;
+    color: black;
 }
+label{
+    font-family: 'Bree Serif', serif;
+}
+
 
 .encadrage-image-balade {
     border: 1px solid black ;

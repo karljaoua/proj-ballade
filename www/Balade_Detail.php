@@ -1,16 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
 <?php
     require_once 'database.php';  //Import de la classe database.php
     require_once 'balade.php';
 
-        
-    $nombd='Promenades';
-    $user ='adminBalades';
-    $pwd  ='BAladesbalades';
 
+    $myconnection = New Database();
 
-    $myconnection = New Database($nombd, $user, $pwd);
-
-    if($myconnection->getConnexion() == NULL) {
+  /*  if($myconnection->getConnexion() == NULL) {
         echo "La connection à la Database " .$nombd ." n'a pas pu se Faire";
         var_dump($myconnection);
     }
@@ -18,17 +17,15 @@
         echo "La connection à la Database " .$nombd ." a Réussi";
         
     }
+*/
 
     $number = 3;
 
     $labalade = $myconnection->listUnebalade($number);
 
     //var_dump($labalade);
-    echo $labalade->getTitre(); echo "<br/>";echo "<br/>";
+  /*  echo $labalade->getTitre(); echo "<br/>";echo "<br/>";*/
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <title>Bootstrap 4 Example</title>
@@ -43,16 +40,13 @@
     
 </head>
 
-<body>
+<body class="fondB">
 
     <!------Section 6  Page du Right Food-->
     <section>
         <div class="container-fluid">
 
             <div class="col-lg-12 categ-balades">
-
-
-
                 <nav class="navbar navbar-expand-md">
                     <a class="navbar-brand" href="#">Logo</a>
                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -61,10 +55,10 @@
                     <div class="collapse navbar-collapse" id="main-navigation">
                         <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ajouter</a>
+                            <a class="nav-link" href="Balade_Ajouter.php">Ajouter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Modifier</a>
+                            <a class="nav-link" href="balade_Modifier.php">Modifier</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Liste des Balades</a>
@@ -105,7 +99,7 @@
                             <div class="dep-arr vertic-space">
                                 <span class="deparr vertic-space"><strong>Départ: </strong><?php echo $labalade->getLieuDep(); ?></span> 
                                 <br/>
-                                <span class="deparr vertic-space""><strong>Arrivée: </strong><?php echo $labalade->getLieuArr(); ?></span>
+                                <span class="deparr vertic-space"><strong>Arrivée: </strong><?php echo $labalade->getLieuArr(); ?></span>
                                 
                             </div>
                             <br/>

@@ -27,7 +27,7 @@ $balades = $database->getAllBalade ();
                     <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ajouter une randonnée</a>
+                    <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
                 </li>
             </ul>
     </div>
@@ -62,7 +62,8 @@ $balades = $database->getAllBalade ();
         </div>
         <div class="container">
             <div class="row">
-                <button type="button" class="btn col-8 offset-2 btn-outline-dark btn-sm text-center">Ajouter une randonnée</button>
+              <a class="col-8 offset-2 text-center btn-sm btn  btn-outline-dark" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
+
             </div>
         </div>
 <!--Xavier liste des randonnées-->
@@ -73,20 +74,21 @@ $balades = $database->getAllBalade ();
                                 <img class="image" src="/home/cf/proj-ballade-master/proj-ballade/www/images/randonnée.jpg" alt="Thumbnail image">
                     </div>
                     -->
+
 <div class="container-fluid black"> 
     <div class=" row">
         <div class="col-lg-6 d-flex flex-column">
             <div>
                 <!--<img class="img-thumbnail" src="/home/cf/proj-ballade-master/proj-ballade/www/images/miniature_1.jpg" alt="Thumbnail image"> -->
                 <div class="lindex">
-                <?php foreach($balades as $balade){ ?>
-        <h3 class="tbalade">Titre : <?php echo $balade->getTitre(); ?></h3>
-            <p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p>
-        <?php } ?>
+             <?php foreach($balades as $balade){ ?>
+                <a href="Balade_Detail.php?id"><h3 class='tbalade'> Titre : "<?php echo $balade->getTitre(); ?></h3></a>    
+                <a href="Balade_Detail.php?id"><p class="textbalade"> Pays : <?php echo $balade->getPays(); ?> Ville <?php echo $balade->getVille(); ?> De : <?php echo $balade->getPseudo(); ?></p></a>
+            <?php } ?>
                 </div>
             </div>
         </div>
-            
+            <!---Carousel---->
         <div class="col-6 photo">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -108,8 +110,8 @@ $balades = $database->getAllBalade ();
     </div>
 </div>
         <div class="container">
-            <div class="row">
-<footer class="page-footer font-small dark col-12 offset-2 offset-md-5">
+            <div class="row  justify-content-center">
+<footer class="page-footer font-small dark">
 <div class="footer-copyright py-2">© 2019 Copyright : 
 <a  class="lienFooter" href="https://www.realise.ch/fr"> realise.ch/fr </a>
 </div>
