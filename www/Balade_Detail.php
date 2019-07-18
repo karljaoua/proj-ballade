@@ -139,7 +139,7 @@
             
                         <div class="col-12 mb-4 text-center ">
       
-                                        <button type="button" class="btn-success btn-block list-return">Retour à la Liste</button>
+                                    <a href="index.php" button type="button" class="btn-success btn-block list-return">Retour à la Liste</button></a>
  
                         </div>
         
