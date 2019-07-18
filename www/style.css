@@ -3,7 +3,7 @@ p{
     color: inherit;
 }
 .p1{
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     max-width: 100%;
     justify-content: center;
 }
@@ -51,7 +51,7 @@ a{
     height: auto;
 }
 .carousel-caption{
-    bottom: 85px;
+    bottom: 40px;
 }
 .titrePrincipal {
     color: white;
@@ -71,7 +71,6 @@ a{
     font-family: 'Bree Serif', serif;
     color: white;
     font-size: 20px;
-    margin-bottom: 45px;
     font-style: oblique;
 }
 .tbalade{
@@ -109,15 +108,15 @@ a{
 }
 .btn{
     padding: o; 
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .black{
     padding: 15px;
-    height: 530px;
+    height: 430px;
     background-color: rgba(143, 188, 143, 0.5);
 }
 .lindex{
-    height: 500px;
+    height: 400px;
     overflow: auto;
     scrollbar-color:black;
 }
@@ -276,11 +275,15 @@ input[type="radio"]{
     
 }
 @media (min-width: 992px){
+    .p1{
+        margin-bottom: 45px;
+    }
     .carousel-inner{
         height: 600px;
     }
     .carousel-caption{
         padding-bottom: 200px;
+        bottom: 120px;
     }
     .titrePrincipal {
         color: white;
@@ -295,10 +298,13 @@ input[type="radio"]{
         margin-bottom: 30px;
         font-style: oblique;
     }
+    .btn{
+        margin-bottom: 35px;
+    }
 }
 @media (min-width: 1200px){
     .carousel-inner{
-        height: 500px;
+        height: 400px;
     }
     .carousel-caption{
         padding-bottom: 600px;
