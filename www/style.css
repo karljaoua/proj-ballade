@@ -288,3 +288,26 @@ h1{
     }
 
 }
+
+@media (max-width: 480px){
+
+    .thebtn{
+            display: flex;
+            flex-direction: column;
+ 
+    }
+}
+
+.thebtn{
+    margin-bottom:5%;
+
+}
+
+.image_balade{
+
+    min-height:37em;    
+	/* background-image: url('file:///k:/proj_balades/www/images/Legibloux.jpg'); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}

@@ -1,0 +1,18 @@
+$etap  ="Les Diablerets - Isenau station - Isenau - Col des Andérets - Chalet Vieux - ";
+    $etap .="Lac
+
+    $titre  = "Au-dessus du village des Diablerets";
+    $pseudo = "Adrien";
+    $type = "S";
+    $cp = "1863";
+    $ville = "Les Diablerets";
+    $country = "Suisse";
+    $begin   = "Les Diablerets";
+    $arrival = "La Corba";
+    $descrip = "Longue montée avec une vue sur les alpes vaudoises";
+
+    $etap  ="Les Diablerets - Isenau station - Isenau - Col des Andérets - Chalet Vieux - ";
+    $etap .="Lac Retaud - Col du Pillon - La Corba";
+
+    $foto = "https ://images0.schweizmobil.ch/image/Les_Diablerets__824_a.jpg";
+
