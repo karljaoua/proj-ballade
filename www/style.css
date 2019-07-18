@@ -163,7 +163,7 @@ a{
     margin-bottom: 1.75em;
 
 }
-.cplieu{
+.cplieu {
     font-size : 1.35em;
     font-family: "Arial";
 
@@ -236,6 +236,39 @@ h1{
     color: black;
     text-align: center;
 }
+
+.title-categ-balades{
+    color: blue;
+    font-family: "Arial";
+    font-size: 2.25em;
+    font-weight: bold;
+    
+    text-align: center;
+    margin:5%;
+
+}
+
+.divi-pseudo{
+    margin-left: 70%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.dep-arr{
+    marge-top : 5%;
+    font-size : 1.35em;
+}
+
+.typebalade{
+    font-size : 1.35em;
+    
+}
+
+input[type="radio"]{
+    margin-right: 40px;
+  }
+
 @media (max-width: 992px) {
     .photo{
         display: none;
