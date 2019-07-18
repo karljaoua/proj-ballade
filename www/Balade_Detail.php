@@ -52,28 +52,16 @@
     <section>
         <div class="container-fluid">
 
-            <div class="col-lg-12 categ-balades">
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="#">Logo</a>
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="main-navigation">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="Balade_Ajouter.php">Ajouter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="balade_Modifier.php">Modifier</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">Liste des Balades</a>
-                        </li>
+                <div class="navb2">
+                        <ul class="nav justify-content-center nb">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
+                            </li>
                         </ul>
-                    </div>
-                </nav>
-
-                <br/>
+                </div>
 
                     
                 <div class="mx-auto text-center title-categ-balades mb-5">
@@ -139,7 +127,7 @@
             
                         <div class="col-12 mb-4 text-center ">
       
-                                    <a href="index.php" button type="button" class="btn-success btn-block list-return">Retour à la Liste</button></a>
+                                    <a href="index.php" button <button type="button" class="btn btn-outline-dark"</button>Retour à la Liste</button></a>
  
                         </div>
         
