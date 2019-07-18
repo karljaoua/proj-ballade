@@ -18,10 +18,16 @@
         
     }
 */
+    if (isset($_GET['id']))
+    
+    {
+        // echo $_GET['id'];
+    
 
-    $number = 3;
+        $number = intval($_GET['id']);;
 
-    $labalade = $myconnection->listUnebalade($number);
+        $labalade = $myconnection->listUnebalade($number);
+    }
 
     //var_dump($labalade);
   /*  echo $labalade->getTitre(); echo "<br/>";echo "<br/>";*/
