@@ -23,9 +23,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
-                    </li>
                 </ul>
         </div>
         <div class="container-fluid">
