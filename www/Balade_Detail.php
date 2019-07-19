@@ -55,7 +55,7 @@
                 <div class="navb2">
                         <ul class="nav justify-content-center nb">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link active" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
