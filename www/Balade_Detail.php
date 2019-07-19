@@ -77,11 +77,11 @@
                 <div class="row">
 
                
-                        <div class="col-lg-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12 textdetail">
         
                             <div class="typebalade">                        
-                                <label class="radio-inline"><input type="radio" name="opt" value = "F" <?php if($labalade->getType()=="F"){ echo "checked";}?>>Famille</label>                            
-                                <label class="radio-inline"><input type="radio" name="opt" value = "S" <?php if($labalade->getType()=="S"){ echo "checked";}?>>Sportif</label>                   
+                                <label class="radio-inline type"><input type="radio" name="opt" value = "F" <?php if($labalade->getType()=="F"){ echo "checked";}?>>Famille</label>                            
+                                <label class="radio-inline type"><input type="radio" name="opt" value = "S" <?php if($labalade->getType()=="S"){ echo "checked";}?>>Sportif</label>                   
                             </div>
     
                             <div class="vertic-space" >
