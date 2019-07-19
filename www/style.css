@@ -156,7 +156,6 @@ a{
 
 }
 .cplieu {
-    font-size : 10px;
     font-family: 'Bree Serif', serif;
 
 }
@@ -253,6 +252,9 @@ h1{
 .dep-arr{
     marge-top : 5%;
     font-size : 1.35em;
+}
+.type{
+    margin-right: 15px;
 }
 
 .typebalade{
