@@ -191,7 +191,7 @@ a{
 .styledebalade{
 
     margin-bottom:1.5em;
-    margin-left: -0.45em;
+    /*margin-left: -0.45em;*/
 
 }
 
@@ -328,6 +328,13 @@ input[type="radio"]{
             display: flex;
             flex-direction: column;
  
+    }
+}
+
+@media (min-width: 480px){
+    .longuet{
+        margin-top: -0.75em;
+
     }
 }
 

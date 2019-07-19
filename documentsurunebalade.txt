@@ -16,3 +16,7 @@ $etap  ="Les Diablerets - Isenau station - Isenau - Col des Andérets - Chalet V
 
     $foto = "https ://images0.schweizmobil.ch/image/Les_Diablerets__824_a.jpg";
 
+
+
+<div class="image_balade" style= "background-image: url('<?php echo $labalade->getUrlPhoto('images'); ?>');" > 
+

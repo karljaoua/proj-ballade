@@ -71,20 +71,19 @@ class Database{
                   
         
         $pdostatement = $this->connexion->prepare($insertrequest);
+
         $pdostatement->execute(array( ":titre" => $titre, ":pseudo" => $pseudo, 
                     ":type" => $type, ":codepostal" => $cp, ":ville" => $ville,
-                    ":description" => $descrip, ":etapes" => $etap, ":photo" => $foto,
-                    ":pays" => $country, ":lieudepart" => $begin, ":lieuarrivee" => $arrival ));
+                    ":pays" => $country, ":lieudepart" => $begin, ":lieuarrivee" => $arrival,
+                    ":description" => $descrip, ":etapes" => $etap, ":photo" => $foto ));
 
         //var_dump($pdostatement->errorInfo());
         //Récupérer l'ID créé lors de l'ajout de l'enregistrement dans Balade
 
-        
         $id = $this->connexion->lastInsertId();
         return $id;           
-
     }
 
-}
-?>  
-        
+} //Fin de la Classe
+
+?>
