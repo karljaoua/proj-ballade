@@ -110,8 +110,7 @@
                     </div>
 
                     <div class="btn-group-horizontal d-flex justify-content-around thebtn" role="group" aria-label="Basic example">
-               
-                        <button type="button" class="btn btn-outline-danger modifier_btn x1">Abandonner l'Ajout</button>
+                        <a href="index.php" button <button type="button" class="btn btn-outline-danger modifier_btn x1"</button>Abandonner l'Ajout</button></a>
                         <button type="submit" class="btn btn-outline-success modifier_btn x1" name="btnsubmit" value="confirm" >Confirmer  l'Ajout</button>
                     </div>
 
