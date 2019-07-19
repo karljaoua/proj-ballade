@@ -34,7 +34,7 @@
 ?>
 
 <head>
-    <title>Bootstrap 4 Example</title>
+    <title>Balade_Detail</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -156,8 +156,8 @@ a{
 
 }
 .cplieu {
-    font-size : 1.35em;
-    font-family: "Arial";
+    font-size : 10px;
+    font-family: 'Bree Serif', serif;
 
 }
 .vertic-space{
@@ -165,9 +165,11 @@ a{
 }
 
 .balade-descrip-block{
-    background-color: rgba(202, 195, 195, 0.972);
+    background-color: rgba(143, 188, 143, 0.5);
     padding: 10px;
     margin-bottom: 0.75em;
+    font-size : 15px;
+    font-family: 'Bree Serif', serif;
 }
 
 .titleDescrip{
@@ -232,7 +234,7 @@ h1{
 .title-categ-balades{
     color:black;
     font-family: 'Bree Serif', serif;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 45px;
     text-align: center;
@@ -298,6 +300,16 @@ input[type="radio"]{
     .encadrage-image-balade {
         border: 1px solid black ;
         min-height:750px;
+    }
+    .title-categ-balades{
+        color:black;
+        font-family: 'Bree Serif', serif;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 45px;
+        text-align: center;
+        margin-top: 65px;
+    
     }
 }
 @media (min-width: 1200px){
