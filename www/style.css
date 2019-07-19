@@ -27,7 +27,7 @@ p{
     left: 0;
     right: 0;
     color: black;
-    z-index: 2;
+    z-index: 2;     
 }
 .navb2 a {
     color: black;
@@ -87,8 +87,8 @@ a{
 }
 .nb{
     font-family: 'Bree Serif', serif;
-    text-decoration: none;
-    font-size: 20px;
+    text-decoration: none; 
+    font-weight: bolder; 
 }
 .fondB{
     background-image: url(images/imageFond5.jpg);
