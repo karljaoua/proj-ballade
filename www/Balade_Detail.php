@@ -34,7 +34,7 @@
 ?>
 
 <head>
-    <title>Bootstrap 4 Example</title>
+    <title>Balade_Detail</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,28 +52,16 @@
     <section>
         <div class="container-fluid">
 
-            <div class="col-lg-12 categ-balades">
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="#">Logo</a>
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="main-navigation">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="Balade_Ajouter.php">Ajouter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="balade_Modifier.php">Modifier</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Liste des Balades</a>
-                        </li>
+                <div class="navb2">
+                        <ul class="nav justify-content-center nb">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.php">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
+                            </li>
                         </ul>
-                    </div>
-                </nav>
-
-                <br/>
+                </div>
 
                     
                 <div class="mx-auto text-center title-categ-balades mb-5">
@@ -89,11 +77,11 @@
                 <div class="row">
 
                
-                        <div class="col-lg-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12 textdetail">
         
                             <div class="typebalade">                        
-                                <label class="radio-inline"><input type="radio" name="opt" value = "F" <?php if($labalade->getType()=="F"){ echo "checked";}?>>Famille &nbsp &nbsp &nbsp</label>                            
-                                <label class="radio-inline"><input type="radio" name="opt" value = "S" <?php if($labalade->getType()=="S"){ echo "checked";}?>>Sportif</label>                   
+                                <label class="radio-inline type"><input type="radio" name="opt" value = "F" <?php if($labalade->getType()=="F"){ echo "checked";}?>>Famille</label>                            
+                                <label class="radio-inline type"><input type="radio" name="opt" value = "S" <?php if($labalade->getType()=="S"){ echo "checked";}?>>Sportif</label>                   
                             </div>
     
                             <div class="vertic-space" >
@@ -139,7 +127,7 @@
             
                         <div class="col-12 mb-4 text-center ">
       
-                                        <button type="button" class="btn-success btn-block list-return">Retour à la Liste</button>
+                                    <a href="index.php" button <button type="button" class="btn btn-outline-dark"</button>Retour à la Liste</button></a>
  
                         </div>
         

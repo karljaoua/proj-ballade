@@ -28,6 +28,6 @@ $nouvelId = $database->balade_Modifier($id, $titre, $pseudo, $type, $codepostal,
 $pays, $lieudepart, $lieuarrivee ,$description, $etapes ,$photo);
 
 // Rediriger l'utilisateur vers la page de profil de la balade
-header('Location: Balade_Detail.php?id='.$id); 
+header('Location: Balade_Modifier.php?id='.$id); 
 
 ?>

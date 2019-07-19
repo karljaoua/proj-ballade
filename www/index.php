@@ -21,22 +21,22 @@ $balades = $database->getAllBalade ();
     
     </head>
     <body class="fondB">
-    <div class="navb">
-            <ul class="nav justify-content-center nb">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
-                </li>
-            </ul>
-    </div>
+        <div class="navb">
+                <ul class="nav justify-content-center nb">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Balade_Ajouter.php"> Ajouter une randonnée</a>
+                    </li>
+                </ul>
+        </div>
         <div class="container p1">
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/potoSlide1.jpg" alt="First slide">
+                            <img class="d-block w-100 csize" src="images/potoSlide1.jpg" alt="First slide">
                             <div class="carousel-caption d-block">
                                 <h3 class="titrePrincipal">Nos petites balades</h3>
                                 <h5 class="textCarousel">"venez partager vos experience"</h5>

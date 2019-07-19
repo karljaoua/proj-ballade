@@ -3,7 +3,7 @@ p{
     color: inherit;
 }
 .p1{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 100%;
     justify-content: center;
 }
@@ -27,7 +27,7 @@ p{
     left: 0;
     right: 0;
     color: black;
-    z-index: 2;
+    z-index: 2;     
 }
 .navb2 a {
     color: black;
@@ -51,7 +51,7 @@ a{
     height: auto;
 }
 .carousel-caption{
-    padding-bottom: 20px;
+    bottom: 40px;
 }
 .titrePrincipal {
     color: white;
@@ -64,14 +64,13 @@ a{
     font-weight: bolder;
     font-family: 'Bree Serif', serif;
     font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 45px;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 .textCarousel{
     font-family: 'Bree Serif', serif;
     color: white;
     font-size: 20px;
-    margin-bottom: 30px;
     font-style: oblique;
 }
 .tbalade{
@@ -88,8 +87,8 @@ a{
 }
 .nb{
     font-family: 'Bree Serif', serif;
-    text-decoration: none;
-    font-size: 20px;
+    text-decoration: none; 
+    font-weight: bolder; 
 }
 .fondB{
     background-image: url(images/imageFond5.jpg);
@@ -109,18 +108,15 @@ a{
 }
 .btn{
     padding: o; 
-    margin-bottom: 15px;
-}
-.x1{
-    
+    margin-bottom: 20px;
 }
 .black{
     padding: 15px;
-    height: 530px;
+    height: 430px;
     background-color: rgba(143, 188, 143, 0.5);
 }
 .lindex{
-    height: 500px;
+    height: 400px;
     overflow: auto;
     scrollbar-color:black;
 }
@@ -130,25 +126,18 @@ a{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
 .img-thumbnail{
     border: solid;
     margin-right: 5%;
     height:80px;
 }
-
-.image{
-    height:520px;
-}
-
 .column-right{
     height:520px;
     overflow-y: scroll;
 }
-
 .title-action-balades{
     color: black;
-    font-family: "Arial";
+    font-family: 'Bree Serif', serif;
     font-size: 2.25em;
     font-weight: bold;
     text-align: center;
@@ -167,8 +156,8 @@ a{
 
 }
 .cplieu {
-    font-size : 1.35em;
-    font-family: "Arial";
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
 
 }
 .vertic-space{
@@ -176,9 +165,11 @@ a{
 }
 
 .balade-descrip-block{
-    background-color: rgba(202, 195, 195, 0.972);
+    background-color: rgba(143, 188, 143, 0.5);
     padding: 10px;
     margin-bottom: 0.75em;
+    font-size : 15px;
+    font-family: 'Bree Serif', serif;
 }
 
 .titleDescrip{
@@ -207,7 +198,7 @@ label{
 
 .encadrage-image-balade {
     border: 1px solid black ;
-    min-height:40em;
+    min-height:400px;
 }
 
 .btn-upload-file{
@@ -241,26 +232,30 @@ h1{
 }
 
 .title-categ-balades{
-    color: blue;
-    font-family: "Arial";
-    font-size: 2.25em;
+    color:black;
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
     font-weight: bold;
-    
+    margin-top: 45px;
     text-align: center;
-    margin:5%;
+    margin-top: 65px;
 
 }
 
 .divi-pseudo{
+    font-family: 'Bree Serif', serif;
     margin-left: 70%;
     font-style: italic;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 15px;
 }
 
 .dep-arr{
     marge-top : 5%;
     font-size : 1.35em;
+}
+.type{
+    margin-right: 15px;
 }
 
 .typebalade{
@@ -269,7 +264,7 @@ h1{
 }
 
 input[type="radio"]{
-    /*margin-right: 20px;*/
+    margin-right: 15px;
   }
 
 @media (max-width: 992px) {
@@ -279,11 +274,15 @@ input[type="radio"]{
     
 }
 @media (min-width: 992px){
+    .p1{
+        margin-bottom: 45px;
+    }
     .carousel-inner{
         height: 600px;
     }
     .carousel-caption{
         padding-bottom: 200px;
+        bottom: 120px;
     }
     .titrePrincipal {
         color: white;
@@ -298,10 +297,27 @@ input[type="radio"]{
         margin-bottom: 30px;
         font-style: oblique;
     }
+    .btn{
+        margin-bottom: 35px;
+    }
+    .encadrage-image-balade {
+        border: 1px solid black ;
+        min-height:750px;
+    }
+    .title-categ-balades{
+        color:black;
+        font-family: 'Bree Serif', serif;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 45px;
+        text-align: center;
+        margin-top: 65px;
+    
+    }
 }
 @media (min-width: 1200px){
     .carousel-inner{
-        height: 500px;
+        height: 400px;
     }
     .carousel-caption{
         padding-bottom: 600px;
