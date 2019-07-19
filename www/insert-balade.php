@@ -31,7 +31,7 @@
 
     $errors= array();
     $file_name = "images/".$_FILES['imgfile']['name'];
-    $file_size =$_FILES['imgfile']['size'];
+    $file_size =$_FILES['imgfile']['size'];$file_name = "images/".$_FILES['imgfile']['name'];
     $file_tmp =$_FILES['imgfile']['tmp_name'];
     $file_type=$_FILES['imgfile']['type'];
     $file_ext=strtolower(end(explode('.',$_FILES['imgfile']['name'])));
@@ -58,9 +58,9 @@
     }
     
         
-        
+        $fichier_name = $_FILES['imgfile']['name'];
         $numbalad = $myconnection->insertBalade($titre, $pseudo, $type, $cp, $ville, $country, 
-                                        $begin, $arrival, $descrip, $etap, $file_name);
+                                        $begin, $arrival, $descrip, $etap, $fichier_name);
     
         //echo $numbalad;
     
